@@ -1,9 +1,9 @@
 <?php
 include ('conexao.php');
 $id_usuario = $_GET['id_usuario'];
-$sql = "SELECT * from usuario where id _usuario=$id_usuario";
-$result=mysqli_query($con, $sql);
-$row =mysqli_fetch_array($result);
+$sql = "SELECT * from usuario where id_usuario=$id_usuario";
+$result = mysqli_query($con,$sql);
+$row = mysqli_fetch_array($result);
 ?>
 
 
@@ -17,7 +17,9 @@ $row =mysqli_fetch_array($result);
 </head>
 <body>
     <h1>Cadastro de Ususario - IFSP</h1>
-    <form action="cadastro_usuario.php" method="post">
+    <form action="altera_usuario_exe.php" method="post">
+        <input name="id_usuario" type="hidden"
+            value="<?php echo $row['id_usuario']?>">
         <div>
             <label for="nome">Nome: </label>
             <input type="text" name="nome" id="nome"
