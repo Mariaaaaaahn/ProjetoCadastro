@@ -5,7 +5,7 @@ $nome =$_POST['nome'];
 $email =$_POST['email'];
 $fone =$_POST['fone'];
 $senha =$_POST['senha'];//recendo e alterando
-
+ 
 echo "<h1>Alteração de dados</h1>";
 echo "<p>Usuário: $nome";
 echo $id_usuario;

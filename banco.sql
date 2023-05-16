@@ -12,7 +12,7 @@ fone_usuario varchar(30) NULL,
 senha        varchar(30) NOT NULL
 );
 
-
+ 
 
 /**
 use  projeto1;
