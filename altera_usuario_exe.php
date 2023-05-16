@@ -10,7 +10,7 @@ echo"<h1>Alteração de dados </h1>";
 echo "<p>Usuário: $nome</p>";
 $sql = "UPDATE usuario SET 
     nome_usuario='$nome',
-    email_usuario='$email',
+    email_usuario='$email', 
     fone_usuario='$fone',
     senha='$senha'
     WHERE id_usuario=$id_usuario";
