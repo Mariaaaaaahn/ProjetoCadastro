@@ -7,9 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-<h3> Pagina Inicial - Projeto Cadastro IFSP</h3>    
+<h3> Pagina Inicial - Projeto Cadastro IFSP</h3>   
+<?php
+if(!empty($_SESSION['login']))
+{
+    echo"<h4>Olá ".$_SESSION['login']['nome_usuario']."</h4>";
+    echo "<a href='logout.php'>Sair</a>";
+
+}
+?>
+
+
 <hr>
 <ul>
+<?php
+if(empty($_SESSION['login']))
+{
+    echo "<li><a href='login.html'>Login</a></li>";
+}
+?>
+
+
 <LI><a href="cadastro_usuario.html"> Cadastrar</a>  </LI>
 <LI><a href="listar_usuario.php"> Listar</a>  </LI>
 
