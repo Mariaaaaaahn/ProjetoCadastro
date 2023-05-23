@@ -9,7 +9,10 @@ $senha = $_POST['senha'];
 
 echo "<h1>Dados do usuário</h1>";
 echo "Nome: $nome <br>";
-echo "Email: $email <br>"; 
+echo "Email: $email <br>"; git config --global user.email "pontinm758@gmail.com"
+
+git config --global user.name "Mariaaaaaahn"
+
 echo "Telefone: $fone <br>";
 echo "Senha: $senha <br>";
 
