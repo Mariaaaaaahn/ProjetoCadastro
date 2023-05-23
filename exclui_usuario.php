@@ -4,7 +4,7 @@
      $sql = "SELECT * FROM usuario  WHERE id_usuario=$id_usuario";
      $result = mysqli_query($con,$sql);
      $row = mysqli_fetch_array($result);
-     $nome_usuario = $row['nome_usuario']; 
+     $nome_usuario = $row['nome_usuario'];
 
 
     echo "<h1>Deletar dados</h1>";

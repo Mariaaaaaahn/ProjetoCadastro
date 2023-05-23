@@ -1,6 +1,6 @@
 <?php
 
-include("conexao.php"); 
+include("conexao.php");
 
 $nome = $_POST['nome'];
 $email = $_POST['email'];
@@ -9,10 +9,7 @@ $senha = $_POST['senha'];
 
 echo "<h1>Dados do usuário</h1>";
 echo "Nome: $nome <br>";
-echo "Email: $email <br>"; git config --global user.email "pontinm758@gmail.com"
-
-git config --global user.name "Mariaaaaaahn"
-
+echo "Email: $email <br>";
 echo "Telefone: $fone <br>";
 echo "Senha: $senha <br>";
 

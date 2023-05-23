@@ -20,7 +20,7 @@
         <tr>
             <th>Código</th>
             <th>Nome</th>
-            <th>Email</th> 
+            <th>Email</th>
             <th>Telefone</th>
         </tr>
         <?php
