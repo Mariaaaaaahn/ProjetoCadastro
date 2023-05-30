@@ -1,18 +1,26 @@
 <?php
-include('conexao.php');
-$email = $_POST['email'];
-$senha = $_POST['senha'];
+    include('conexao.php');
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
 
-$sql= "SELECT * FROM usuario
-where email_usuario ='$email'
-and senha ='$senha'";
+    $sql = "select * from usuario
+            where email_user = '$email'
+            and senha = '$senha'";
 
-$result = mysqli_query($con,$sql);
-$rowcount = mysqli_num_rows($result);
-if($rowcount > 0)
-include ('criasessao.php');
-$_session['login'] = mysqli_fetch_array($result);
-header('Location: index.php');
-}else{ echo "<h1> Usuario não encontrado!</h1>";}
+            $result = mysqli_query($con,$sql);
+            $rowcount = mysqli_num_rows($result);
+            if($rowcount>0){
+            //logar
+            include('criasessao.php');
+            $_SESSION['login'] = mysqli_fetch_array($result);
+            header('Location: index.php');
+            } else {
+                echo "<h1>Usuário não encontrado!</h1>";
+            }
+
+            // if(session_status() != PHP_SESSION_ACTIVE){
+            //     session_cache_expire(60); //60min
+            //     session_start();
+            // }
 
 ?>

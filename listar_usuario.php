@@ -32,7 +32,11 @@
             echo"<td>".$row['fone_usuario']."</td>";
             echo"<td><a href='altera_usuario.php?id_usuario=".$row['id_usuario']."'>Alterar</a></td>";
             echo"<td><a href='exclui_usuario.php?id_usuario=".$row['id_usuario']."'>Excluir</a></td>";
-
+          if($row['foto']=="")
+          echo "<td> </td>";
+          else
+          
+            echo  "<td><img src='".$row['foto']."' width='80' height='100'/></td>";
 
             echo "</tr>";
 

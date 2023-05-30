@@ -8,7 +8,9 @@
 </head>
 <body>
     <h1>Cadastro de Ususario - IFSP</h1>
-    <form action="cadastro_usuario.php" method="post">
+    <form action="cadastro_usuario.php"
+    enctype="multipart/form-data" method="post">
+    <!--forma que os dados serao criptados-->
         <div>
             <label for="nome">Nome: </label>
             <input type="text" name="nome" id="nome">
@@ -25,6 +27,15 @@
             <label for="senha">Senha: </label>
             <input type="password" name="senha" id="senha">
         </div>
+<div>
+<input type="file" name="foto" id="foto" accept="image/*">
+
+</div>
+
+
+
+
+
         <input type="submit" value="Salvar">
     </form>
 </body>
